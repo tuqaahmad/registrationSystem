@@ -1,0 +1,32 @@
+<html lang="en">
+<%- include('./partials/header.ejs')  %>
+<%- include('./partials/stdNav.ejs')  %>
+<body>
+    <br>
+    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:200px; border-radius: 50%; margin-left: 45%; margin-bottom: 1%;">
+    <span style=" margin-left: 895px; font-weight: bold; font-size: 23px;"> Student </span>
+
+
+    <br><br>
+    <label class="labelBox"> Personal information </label>
+    <div class= "infoBox">
+        <li>Name:  <%- JSON.parse(item).name %></li>
+        <li>Gender: <%- JSON.parse(item).gen %></li>
+        <li>Date of birth: <%- JSON.parse(item).date %></li>
+        <li>Number: <%- JSON.parse(item).num %></li>
+        <li>Email: <%- JSON.parse(item).email %>  </li>
+    </div>
+
+    <br><br>
+    <label class="labelBox"> Academic information </label>
+    <div class="infoBox">
+        <li >User ID:  <%- JSON.parse(item).ID %> </li>
+        <li >Specialization: <%- JSON.parse(item).spec %></li>
+    </div>
+
+
+
+
+<%- include('./partials/footer.ejs')  %>
+</body>
+</html>

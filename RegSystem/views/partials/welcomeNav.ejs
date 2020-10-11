@@ -1,0 +1,25 @@
+<nav class='nav'>
+    <div class='container'>
+
+    <a class='nav-item nav-brand' href="/"> <img src="https://uploads-ssl.webflow.com/5e8edfc11014dc69bd414ab2/5e8ee0991f827e4a4a0037d2_5e79f1f2104a8721b191cd13_Group%201093.png" 
+       width="130" height="190" style=" padding-bottom: 60%; padding-top: -40%; margin-top: -30;      "
+       srcset="https://cdn.discordapp.com/attachments/751005345559609369/760913744523034654/Princess_Sumaya_University_for_Technology_logo.png" 
+       alt="Princess_Sumaya_University_for_Technology_logo" class="brand-logo"></a>
+
+          <button class='toggler'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class='nav-collapse'>
+            <a class='nav-item nav-link' href='/'>Login</a>
+            <a class='nav-item nav-link' href='/signup'>Sign up</a>
+            <a class='nav-item nav-link' href='/contact'>Contact</a>
+          </div>
+        </div>
+      </nav>
+
+<script>
+document.querySelector('.toggler').onclick = () => {
+document.querySelector('.nav').classList.toggle('open');}
+</script>
